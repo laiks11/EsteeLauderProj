@@ -30,7 +30,7 @@ struct recommendedRoutine: View {
 
 struct recommendedRoutine_Previews: PreviewProvider {
     static var previews: some View {
-        recommendedRoutine(selectedWords: ["Oily Skin", "Tight", "Large Pores", "Red", "Dehydrated"])
+        recommendedRoutine(selectedWords: ["Oily Skin", "Tight", "Porous", "Red", "Dehydrated"])
     }
 }
 
