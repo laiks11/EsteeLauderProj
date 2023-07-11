@@ -7,18 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD0A955C2A5C22580075161C /* logoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0A955B2A5C22580075161C /* logoView.swift */; };
 		CD26C0212A590718005AA4D1 /* EsteeLauderProjApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD26C0202A590718005AA4D1 /* EsteeLauderProjApp.swift */; };
 		CD26C0232A590718005AA4D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD26C0222A590718005AA4D1 /* ContentView.swift */; };
-		CD26C0252A59071A005AA4D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD26C0242A59071A005AA4D1 /* Assets.xcassets */; };
+		CD26C0252A59071A005AA4D1 /* assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD26C0242A59071A005AA4D1 /* assets.xcassets */; };
 		CD26C0282A59071A005AA4D1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD26C0272A59071A005AA4D1 /* Preview Assets.xcassets */; };
+		CD26C0332A591539005AA4D1 /* homePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD26C0322A591539005AA4D1 /* homePage.swift */; };
+		CD680D702A5CC05600E53410 /* lifestyleQuiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD680D6F2A5CC05600E53410 /* lifestyleQuiz.swift */; };
+		CD680D722A5CC29300E53410 /* recommendedRoutine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD680D712A5CC29300E53410 /* recommendedRoutine.swift */; };
+		CD680D742A5CC53000E53410 /* wordsSelected.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD680D732A5CC53000E53410 /* wordsSelected.swift */; };
+		CD77E4152A5C29E200C18204 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = CD77E4142A5C29E200C18204 /* fonts */; };
+		CD77E4172A5C3B9400C18204 /* skincareRoutine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD77E4162A5C3B9400C18204 /* skincareRoutine.swift */; };
+		CD77E4192A5C4EDF00C18204 /* videoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD77E4182A5C4EDF00C18204 /* videoView.swift */; };
+		CD77E41D2A5C53B900C18204 /* reviewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD77E41C2A5C53B900C18204 /* reviewSection.swift */; };
+		CDD320ED2A5CBD8B000E6DCA /* customFontView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD320EC2A5CBD8B000E6DCA /* customFontView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CD0A955B2A5C22580075161C /* logoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logoView.swift; sourceTree = "<group>"; };
 		CD26C01D2A590718005AA4D1 /* EsteeLauderProj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EsteeLauderProj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD26C0202A590718005AA4D1 /* EsteeLauderProjApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EsteeLauderProjApp.swift; sourceTree = "<group>"; };
 		CD26C0222A590718005AA4D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		CD26C0242A59071A005AA4D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD26C0242A59071A005AA4D1 /* assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = assets.xcassets; sourceTree = "<group>"; };
 		CD26C0272A59071A005AA4D1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CD26C0322A591539005AA4D1 /* homePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homePage.swift; sourceTree = "<group>"; };
+		CD680D6F2A5CC05600E53410 /* lifestyleQuiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lifestyleQuiz.swift; sourceTree = "<group>"; };
+		CD680D712A5CC29300E53410 /* recommendedRoutine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recommendedRoutine.swift; sourceTree = "<group>"; };
+		CD680D732A5CC53000E53410 /* wordsSelected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wordsSelected.swift; sourceTree = "<group>"; };
+		CD77E4142A5C29E200C18204 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
+		CD77E4162A5C3B9400C18204 /* skincareRoutine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = skincareRoutine.swift; sourceTree = "<group>"; };
+		CD77E4182A5C4EDF00C18204 /* videoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = videoView.swift; sourceTree = "<group>"; };
+		CD77E41C2A5C53B900C18204 /* reviewSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reviewSection.swift; sourceTree = "<group>"; };
+		CDD320EC2A5CBD8B000E6DCA /* customFontView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customFontView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +72,17 @@
 			isa = PBXGroup;
 			children = (
 				CD26C0202A590718005AA4D1 /* EsteeLauderProjApp.swift */,
+				CD26C0322A591539005AA4D1 /* homePage.swift */,
+				CDD320EC2A5CBD8B000E6DCA /* customFontView.swift */,
+				CD77E41C2A5C53B900C18204 /* reviewSection.swift */,
+				CD77E4182A5C4EDF00C18204 /* videoView.swift */,
+				CD77E4162A5C3B9400C18204 /* skincareRoutine.swift */,
+				CD680D732A5CC53000E53410 /* wordsSelected.swift */,
+				CD680D6F2A5CC05600E53410 /* lifestyleQuiz.swift */,
+				CD680D712A5CC29300E53410 /* recommendedRoutine.swift */,
+				CD0A955B2A5C22580075161C /* logoView.swift */,
 				CD26C0222A590718005AA4D1 /* ContentView.swift */,
-				CD26C0242A59071A005AA4D1 /* Assets.xcassets */,
+				CD77E4142A5C29E200C18204 /* fonts */,
 				CD26C0262A59071A005AA4D1 /* Preview Content */,
 			);
 			path = EsteeLauderProj;
@@ -63,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				CD26C0272A59071A005AA4D1 /* Preview Assets.xcassets */,
+				CD26C0242A59071A005AA4D1 /* assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -125,8 +155,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD77E4152A5C29E200C18204 /* fonts in Resources */,
 				CD26C0282A59071A005AA4D1 /* Preview Assets.xcassets in Resources */,
-				CD26C0252A59071A005AA4D1 /* Assets.xcassets in Resources */,
+				CD26C0252A59071A005AA4D1 /* assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +168,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD680D702A5CC05600E53410 /* lifestyleQuiz.swift in Sources */,
+				CD77E4172A5C3B9400C18204 /* skincareRoutine.swift in Sources */,
+				CD26C0332A591539005AA4D1 /* homePage.swift in Sources */,
+				CD0A955C2A5C22580075161C /* logoView.swift in Sources */,
 				CD26C0232A590718005AA4D1 /* ContentView.swift in Sources */,
+				CDD320ED2A5CBD8B000E6DCA /* customFontView.swift in Sources */,
+				CD680D722A5CC29300E53410 /* recommendedRoutine.swift in Sources */,
+				CD680D742A5CC53000E53410 /* wordsSelected.swift in Sources */,
+				CD77E41D2A5C53B900C18204 /* reviewSection.swift in Sources */,
+				CD77E4192A5C4EDF00C18204 /* videoView.swift in Sources */,
 				CD26C0212A590718005AA4D1 /* EsteeLauderProjApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
