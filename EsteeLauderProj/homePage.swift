@@ -85,7 +85,7 @@ struct homePage: View {
                             .multilineTextAlignment(.center)
                             .padding(.all)
                         
-                        NavigationLink(destination: skincareRoutine()) {
+                        NavigationLink(destination: SkincareRoutine()) {
                             Rectangle()
                                 .fill(Color(hex: 0xCE3149))
                                 .frame(width: 350, height: 70) // Adjust the width and height as desired
@@ -157,7 +157,7 @@ struct homePage: View {
                         
                         reviewSection(rating: 5, title: "Melting Soft Creme/Mask", reviewText: "Estée Lauder Nutritious Melting Soft Creme/ Mask is a luxurious spa day for the face. It is light, creamy, and absorbs fast. My skin feels super hydrated and looks more smooth. I like that this product is unscented and feel it would be a good fit for any skin type. I would recommend and purchase Estée Lauder Nutritious Melting Soft Creme/ Mask.", reviewer: "AURELIA")
                             .padding(.horizontal)
-                        NavigationLink(destination: skincareRoutine()) {
+                        NavigationLink(destination: SkincareRoutine()) {
                             Rectangle()
                                 .fill(Color(hex: 0xCE3149))
                                 .frame(width: 360, height: 70) // Adjust the width and height as desired
