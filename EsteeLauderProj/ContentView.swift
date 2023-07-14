@@ -19,7 +19,7 @@ struct ContentView: View {
                     .frame(maxWidth: 350, maxHeight: .infinity)
                     .padding(.horizontal)
                 
-                NavigationLink(destination: homePage()) {
+                NavigationLink(destination: HomePage()) {
                     Rectangle()
                         .fill(Color(hex: 0xE17C8C))
                         .frame(width: 315, height: 50) // Adjust the width and height as desired

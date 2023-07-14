@@ -8,7 +8,7 @@
 import SwiftUI
 import AVKit
 
-struct homePage: View {
+struct HomePage: View {
     @State private var selectedImage: String = "mainimage"
     
     let galleryImages: [String] = [
@@ -41,24 +41,52 @@ struct homePage: View {
     var body: some View {
         NavigationView {
             ZStack {
-                Color(hex: 0xCE3149)
+                Color(hex: 0xF8F1F3)
                     .edgesIgnoringSafeArea(.all)
                 ScrollView {
                     VStack {
-                        logoView()
-                            .padding(.vertical)
+                        Image("head")
+                          .resizable()
+                        .aspectRatio(contentMode: .fit)
+                      .frame(maxWidth: .infinity)
+                     .ignoresSafeArea(.all)
+                      .padding(.top, -80)
+                                            
                         
                         Text("SHOP THE NUTRITIOUS LINE")
                             .font(.title)
                             .fontWeight(.light)
-                            .foregroundColor(Color(hex: 0xF8F1F3)) // Set text color
-                            .padding(.vertical)
+                            .foregroundColor(Color(hex: 0xCE3149))
+                            .multilineTextAlignment(.center)
+                            .padding(.all)
                         
-                        Image(selectedImage)
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 300, height: 300)
-                            .padding()
+                        VStack(spacing: 0) {
+                            Rectangle()
+                                .fill(Color(hex: 0xCE3149))
+                                .frame(width: 300, height: 30)
+                                .overlay(
+                                    Text("NEW IN")
+                                        .font(.caption)
+                                        .fontWeight(.bold)
+                                        .foregroundColor(Color(hex: 0xF8F1F3))
+                                )
+                            
+                            Image(selectedImage)
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 300, height: 300)
+                            
+                            Rectangle()
+                                .fill(Color(hex: 0xCE3149))
+                                .frame(width: 300, height: 30)
+                                .overlay(
+                                    Text("EWG certified")
+                                        .font(.caption)
+                                        .fontWeight(.bold)
+                                        .foregroundColor(Color(hex: 0xF8F1F3))
+                                )
+                        }
+                        .padding(.vertical)
                         
                         HStack(spacing: 10) {
                             ForEach(galleryImages, id: \.self) { imageName in
@@ -78,23 +106,54 @@ struct homePage: View {
                             }
                         }
                         
-                        VStack(alignment: .leading) {
-                            Text("If your skin is grumpy, dull and irritable, you’re holding the right set. Featuring naturally-derived ingredients: Sweet Kelp, Red Algae Ferment and Coconut Water Ferment. 2-in-1 Foam Cleanser purifies. Cushioning Essence Lotion preps skin for regimen. Delivers a hydrating infusion. Awakens. Balances. Calms. Pillowy Creme/Mask melts into skin. Comfortable, cushy feel. Renews. Strengthens. Show your skin some love with peak performance skincare.")
-                                .font(.body)
-                                .fontWeight(.regular)
-                                .foregroundColor(Color(hex: 0xF8F1F3)) // Set text color
-                                .multilineTextAlignment(.center)
-                                .padding(.all)
+                        HStack(alignment: .center) {
                             
+                            Text("2-in-1 Foam Cleanse purifies")
+                                .font(.title3)
+                                .fontWeight(.light)
+                                .foregroundColor(Color(hex: 0xCE3149))
+                                .multilineTextAlignment(.center)
+                                .padding()
+                            
+                            Rectangle()
+                                .fill(Color(hex: 0xCE3149))
+                                .frame(width: 2, height: 75.0)
+                                .padding(.vertical, 10)
+                            
+                            Text("Essence Lotion preps skin for regimen")
+                                .font(.title3)
+                                .fontWeight(.light)
+                                .foregroundColor(Color(hex: 0xCE3149))
+                                .multilineTextAlignment(.center)
+                                .padding(.horizontal)
+                            
+                            Rectangle()
+                                .fill(Color(hex: 0xCE3149))
+                                .frame(width: 2, height: 75.0)
+                                .padding(.vertical, 10)
+                            
+                            Text("Pillowy Creme/Mask melts into skin.")
+                                .font(.title3)
+                                .fontWeight(.light)
+                                .foregroundColor(Color(hex: 0xCE3149))
+                                .multilineTextAlignment(.center)
+                                .padding([.leading, .bottom, .trailing])
+                        }
+                        .padding(.horizontal)
+                        
+                        VStack(alignment: .center) {
                             NavigationLink(destination: SkincareRoutine()) {
                                 Rectangle()
-                                    .fill(Color(hex: 0xF8F1F3)) // Set background color
-                                    .frame(width: 300, height: 70) // Adjust the width and height as desired
-                                    .overlay(Text("Click here to discover YOUR personalized skincare routine")
-                                        .foregroundColor(Color(hex: 0xCE3149)) // Set text color
-                                        .font(.headline))
+                                    .fill(Color(hex: 0xCE3149))
+                                    .frame(width: 320, height: 70)
+                                    .overlay(
+                                        Text("Click here to discover YOUR personalized skincare routine")
+                                            .foregroundColor(Color(hex: 0xF8F1F3))
+                                            .font(.headline)
+                                            .padding(.horizontal)
+                                    )
                             }
-                            .padding(.leading)
+                            .padding()
                         }
                         .padding(.leading)
                         
@@ -102,16 +161,16 @@ struct homePage: View {
                             Text("Made WITH")
                                 .font(.title)
                                 .fontWeight(.ultraLight)
-                                .foregroundColor(Color(hex: 0xF8F1F3)) // Set text color
+                                .foregroundColor(Color(hex: 0xCE3149))
                                 .multilineTextAlignment(.leading)
                                 .padding([.top, .leading])
                             
                             ForEach(ingredientList, id: \.self) { ingredient in
                                 HStack(spacing: 10) {
                                     Image(systemName: "checkmark.circle.fill")
-                                        .foregroundColor(Color(hex: 0xF8F1F3)) // Set icon color
+                                        .foregroundColor(Color(hex: 0xCE3149))
                                     Text(ingredient)
-                                        .foregroundColor(Color(hex: 0xF8F1F3)) // Set text color
+                                        .foregroundColor(Color(hex: 0xCE3149))
                                 }
                                 .padding(.vertical, 5)
                             }
@@ -120,16 +179,16 @@ struct homePage: View {
                             Text("Made WITHOUT")
                                 .font(.title)
                                 .fontWeight(.ultraLight)
-                                .foregroundColor(Color(hex: 0xF8F1F3)) // Set text color
+                                .foregroundColor(Color(hex: 0xCE3149))
                                 .multilineTextAlignment(.leading)
                                 .padding()
                             
                             ForEach(madeWithoutList, id: \.self) { ingredient in
                                 HStack(spacing: 10) {
                                     Image(systemName: "xmark.circle.fill")
-                                        .foregroundColor(Color(hex: 0xF8F1F3)) // Set icon color
+                                        .foregroundColor(Color(hex: 0xCE3149))
                                     Text(ingredient)
-                                        .foregroundColor(Color(hex: 0xF8F1F3)) // Set text color
+                                        .foregroundColor(Color(hex: 0xCE3149))
                                 }
                                 .padding(.vertical, 5)
                             }
@@ -139,16 +198,13 @@ struct homePage: View {
                         
                         Spacer()
                         
-                        VStack {
+                        VStack(spacing: 20) {
                             videoView(videoID: "DAHWftZAgE0")
-                        }
-                        
-                        VStack {
+                            
                             Text("Customer Reviews")
                                 .font(.title)
                                 .fontWeight(.bold)
-                                .foregroundColor(Color(hex: 0xF8F1F3)) // Set text color
-                                .padding(.vertical, 16)
+                                .foregroundColor(Color(hex: 0xCE3149))
                             
                             reviewSection(rating: 5, title: "2-in-1 Foam Cleanser", reviewText: "The Nutritious 2-in-1 Cleanser boasts a rich and creamy consistency that feels indulgent during application. Its pleasant fragrance is both refreshing and invigorating, making my skincare routine a delightful experience. I appreciate that it lathers up easily, allowing me to massage it gently onto my face and neck, effectively dissolving impurities.", reviewer: "DV")
                                 .padding(.horizontal)
@@ -159,32 +215,31 @@ struct homePage: View {
                             reviewSection(rating: 5, title: "Melting Soft Creme/Mask", reviewText: "Estée Lauder Nutritious Melting Soft Creme/ Mask is a luxurious spa day for the face. It is light, creamy, and absorbs fast. My skin feels super hydrated and looks more smooth. I like that this product is unscented and feel it would be a good fit for any skin type. I would recommend and purchase Estée Lauder Nutritious Melting Soft Creme/ Mask.", reviewer: "AURELIA")
                                 .padding(.horizontal)
                             
-                            NavigationLink(destination: SkincareRoutine()) {
-                                Rectangle()
-                                    .fill(Color(hex: 0xF8F1F3)) // Set background color
-                                    .frame(width: 330, height: 70) // Adjust the width and height as desired
-                                    .overlay(Text("Haven't taken the test yet? Go now")
-                                        .foregroundColor(Color(hex: 0xCE3149)) // Set text color
-                                        .font(.headline))
-                            }
+                           
                         }
+                        NavigationLink(destination: SkincareRoutine()) {
+                            Image("bottom")
+                            .resizable()
+                          .aspectRatio(contentMode: .fit)
+                        .frame(maxWidth: .infinity)
+                       .ignoresSafeArea(.all)
+                        .padding(.bottom, -80)
+                        }
+                        .padding(.top)
+                        
+                        .edgesIgnoringSafeArea(.all)
+                        
+                        .navigationBarTitleDisplayMode(.inline)
                     }
-                    .padding(.horizontal)
-                    .frame(maxWidth: .infinity, maxHeight: .infinity)
-                    
-                    .background(Color(hex: 0xCE3149))
-                    .edgesIgnoringSafeArea(.all)
-                    
-                    
-                    .navigationBarTitleDisplayMode(.inline)
                 }
             }
         }
     }
 }
 
-struct homePage_Previews: PreviewProvider {
+struct HomePage_Previews: PreviewProvider {
     static var previews: some View {
-        homePage()
+        HomePage()
     }
 }
+
