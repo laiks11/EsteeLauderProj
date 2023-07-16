@@ -10,6 +10,7 @@ import AVKit
 
 struct HomePage: View {
     @State private var selectedImage: String = "mainimage"
+   
     
     let galleryImages: [String] = [
         "image1",
@@ -50,7 +51,7 @@ struct HomePage: View {
                         .aspectRatio(contentMode: .fit)
                       .frame(maxWidth: .infinity)
                      .ignoresSafeArea(.all)
-                      .padding(.top, -80)
+                      .padding(.top, -100)
                                             
                         
                         Text("SHOP THE NUTRITIOUS LINE")

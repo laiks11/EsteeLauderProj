@@ -14,7 +14,7 @@ struct logoView: View {
             .resizable()
             .aspectRatio(contentMode: .fit)
             .padding(.top)
-            .frame(height: 50) // Adjust the height according to your logo size
+            .frame(height: 70) // Adjust the height according to your logo size
     
     
             
